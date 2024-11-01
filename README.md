@@ -11,6 +11,7 @@
 
 ## Project Structure
 
+```bash
 bdd-analyzer/
 ├── bdd_step_analyzer/
 │   ├── __init__.py                 # Marks directory as a package
@@ -20,7 +21,7 @@ bdd-analyzer/
 ├── requirements.txt                 # Dependencies for the project
 ├── README.md                        # Project documentation
 └── main.py                          # Script to run the analysis
-
+```
 
 ## Getting Started
 
@@ -41,7 +42,10 @@ bdd-analyzer/
    1. Prepare Your Feature Files:
         - Place .feature files in the data/ directory. Each file should follow the BDD syntax with Given, When, Then, And, and But steps
    2. Run the Analysis:
-   - python main.py
+   ```bash
+   python main.py
+   ```
+
    3. Check the Report:
    - After running, a report will be generated in the reports/ directory (e.g., reports/similar_steps_report.txt). If a report already exists, the tool will save the new report with an incremented filename (e.g., similar_steps_report_1.txt, similar_steps_report_2.txt).
 
@@ -49,12 +53,14 @@ bdd-analyzer/
 
 The report will show similar steps with their type, similarity score, and file references. Example:
 
+```bash
 Similar Steps Found:
 
 Step 1: the user is on the login page (Type: Given, File: data/login.feature)
 Step 2: the user navigates to the login page (Type: Given, File: data/registration.feature)
 Similarity Score: 92.5
 Note: Based on semantic similarity and domain-specific adjustments.
+```
 
 ## Customization
 
